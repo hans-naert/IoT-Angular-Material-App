@@ -1,0 +1,7 @@
+<p>base works!</p>
+<button (click)="loadLights()">Load Lights</button>
+<ul>
+  <li *ngFor="let light of lights">
+    {{ light.name }} - {{ light.state.on ? 'On' : 'Off' }}
+  </li>
+</ul>
